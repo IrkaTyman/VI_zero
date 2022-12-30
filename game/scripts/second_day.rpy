@@ -36,7 +36,7 @@ label track_kai:
     scene lane morning
     with dissolve
 
-    play music "music/music bad.mp3" fadein fadein volume volume
+    play music "music/music bad.mp3" fadein fadein volume volume loop
 
     "{cps=40}Переулок, в который таинственно забрел Кай, совсем не похож на место, 
     где происходит что-то легальное и благонамеренное.{/cps}"
@@ -59,7 +59,7 @@ label track_kai:
     return
 
 label not_track_kai:
-    play music "music/music good.mp3" fadein fadein volume volume
+    play music "music/music good.mp3" fadein fadein volume volume loop
 
     "{cps=43}Не думаю, что дела Кая как-либо меня касаются. В конце концов, имеет же 
     он право вне рабочего времени ходить, куда его заблагорассудится. 
@@ -165,17 +165,17 @@ label second_day_contunue:
     scene elevator inside
     with dissolve
     
-    play music "music/elevator.mp3" fadein fadein volume volume
+    play music "music/elevator.mp3" fadein fadein volume volume loop
 
     "{cps=43}Интересно, один лишь Кай в команде такой странный, или другим тоже есть, что скрывать? 
-    Нужно постараться аккуратно разузн  ать что-нибудь у Карэн, при этом не забыть о главной цели 
+    Нужно постараться аккуратно разузнать что-нибудь у Карэн, при этом не забыть о главной цели 
     - показать себя как перспективного разработчика, чтобы заполучить место в компании.{/cps}"
 
     "Ну, вперед!    …"
 
     stop music fadeout fadeout
     pause fadeout
-    play music "music/music good.mp3" fadein fadein volume volume
+    play music "music/music good.mp3" fadein fadein volume volume loop
 
     scene office
     with dissolve

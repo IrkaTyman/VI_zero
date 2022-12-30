@@ -8,10 +8,9 @@ label second_day_elevator:
     stop music fadeout fadeout
     pause fadeout
 
-    play music "music/elevator.mp3" fadein fadein volume volume
-
+    play music "music/elevator.mp3" fadein fadein volume volume loop
     show kai
-    with OffsetRightToCenterSide
+    with dissolve
     
     kai "{cps=43}Я, конечно, обещал тебе отвлеченный от работы диалог, но пойми меня правильно, 
     мне нужно еще кое-что тебе рассказать, и лучше это сделать прямо сейчас.{/cps}"
@@ -44,7 +43,7 @@ label second_day_elevator:
 label second_day_cafe:
     stop music fadeout fadeout
     pause fadeout
-    play music "music/music good.mp3" fadein fadein volume volume
+    play music "music/music good.mp3" fadein fadein volume volume loop
     
     scene scenes cafee
     with dissolve   

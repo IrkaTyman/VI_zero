@@ -1,4 +1,5 @@
 label fifth_day:
+    play music "music/music good.mp3" fadein fadein volume volume loop
     scene black:
         zoom 2.0
     with fade
@@ -442,7 +443,7 @@ label fifth_day_continue:
 
         stop music fadeout fadeout
         pause fadeout
-        play music "music/music bad.mp3" volume volume
+        play music "music/music bad.mp3" volume volume loop
         jump splashscreen3
 
         return
@@ -671,7 +672,7 @@ label splashscreen3_cont:
 
             scene street way home evening
             with dissolve
-            play sound "music/music good.mp3" fadein fadein volume volume
+            play sound "music/music good.mp3" fadein fadein volume volume loop
 
 
             "Сегодняшний день перевернул все с ног на голову. Но судьба человека определяется его способностью сопротивляться внешним угрозам. Я преодолею препятствия и сделаю тайное явным."

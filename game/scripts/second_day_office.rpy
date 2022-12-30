@@ -6,7 +6,7 @@ label second_day_office:
     scene office2 
     with dissolve
 
-    play sound "music/keyboard.mp3" fadein fadein volume volume
+    play sound "music/keyboard.mp3" fadein fadein volume volume loop
 
     show kai
     with dissolve

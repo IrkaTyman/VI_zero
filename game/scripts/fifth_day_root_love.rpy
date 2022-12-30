@@ -28,7 +28,7 @@ label fifth_day_root_love:
         return
 
     else:
-        if (loveLine == 3):
+        if (loveLine >=3):
             jump love_root_plus
             return
         else:

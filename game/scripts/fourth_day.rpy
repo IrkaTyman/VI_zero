@@ -8,27 +8,27 @@ label fourth_day:
 
     scene blog one
     with dissolve
-    pause 5.0
+    pause 10.0
 
     scene blog two
     with dissolve
-    pause 5.0
+    pause 10.0
 
     scene blog three
     with dissolve
-    pause 5.0
+    pause 10.0
 
     scene home pc _screen desktop
     with dissolve
-    pause 2.5
+    pause 10.0
 
     scene home pc _screen search
     with dissolve
-    pause 2.5
+    pause 10.0
 
     scene home pc _screen cityzen
     with dissolve
-    pause 2.5
+    pause 10.0
 
     "Эх, все еще не вышла…"
 
@@ -58,7 +58,7 @@ label fourth_day:
 
     stop music fadeout fadeout
     pause fadeout
-    play music "music/elevator.mp3" fadein fadein volume volume
+    play music "music/elevator.mp3" fadein fadein volume volume loop
 
     scene elly smile box
     with dissolve
@@ -102,7 +102,7 @@ label help_girl:
 
     stop music fadeout fadeout
     pause fadeout
-    play music "music/music good.mp3" fadein fadein volume volume
+    play music "music/music good.mp3" fadein fadein volume volume loop
     scene elevator outside
     with dissolve
     
@@ -191,7 +191,12 @@ label help_girl:
     show karen
     k "До свидания, Алан."
 
-    show karen angry
+    hide alan
+    with OffsetLeftToLeftSide
+
+    show karen angry at center
+    with move
+
     k "[nameM], какого черта ты тут устроил? Опоздал, еще вздумал права качать? Ты же услышал, кто он. Неужели непонятно, 
     с кем спорить можно, а с кем нет? Он второй по важности человек в компании, не стоит его злить. 
     Одной своей подписью он может выкинуть меня, Кая, а уж о тебе и речи никакой не идет."
@@ -228,12 +233,12 @@ label girl_ignore:
 
     stop music fadeout fadeout
     pause fadeout
-    play music "music/music good.mp3" fadein fadein volume volume
+    play music "music/music good.mp3" fadein fadein volume volume loop
     scene elevator outside
     with dissolve
     pause 1.5
 
-    play sound "music/keyboard.mp3" volume volume
+    play sound "music/keyboard.mp3" volume volume loop
     scene office
     with dissolve
 

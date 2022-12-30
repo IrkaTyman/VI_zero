@@ -1,5 +1,5 @@
 label third_day_end:
-    play sound "music/keyboard.mp3" fadein fadein volume volume
+    play sound "music/keyboard.mp3" fadein fadein volume volume 
     scene office computer
     with fade
 
@@ -150,14 +150,14 @@ screen btn_help:
 screen btn_help_karen:
     imagebutton:
         xalign 0.517
-        yalign 0.36
+        yalign 0.38
         idle "tools/game angry birds/btn task _help karen.png"
         hover "tools/game angry birds/btn task _help karen.png"
         action Jump("ask_help_Karen")
 
     imagebutton:
         xalign 0.517
-        yalign 0.31
+        yalign 0.33
         idle "tools/game angry birds/btn task _help internet.png"
         hover "tools/game angry birds/btn task _help internet.png"
         action Jump("ask_help_Internet")

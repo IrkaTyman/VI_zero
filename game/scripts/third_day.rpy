@@ -3,7 +3,7 @@ label third_day:
     with fade
     stop music fadeout fadeout
     pause fadeout
-    play sound "music/alarm.mp3" fadein fadein volume volume
+    play sound "music/alarm.mp3" fadein fadein volume volume loop
 
     "Черт. Я снова отключил будильник…"
 
@@ -17,12 +17,12 @@ label third_day:
     show hall
     with fade
 
-    play music "music/music good.mp3" fadein fadein volume volume
+    play music "music/music good.mp3" fadein fadein volume volume loop
 
     "Ну разумеется, как всегда никого… Видимо, только я так безответственно отношусь к 
     предоставляемым компанией возможностям."
 
-    play sound "music/heels.mp3" fadein fadein volume volume
+    play sound "music/heels.mp3" fadein fadein volume volume loop
     
     "Что, я все-таки не один?"
     pause long_fadeout
@@ -42,7 +42,7 @@ label third_day:
 
     scene elevator outside
     with fade
-    play music "music/elevator.mp3" fadein fadein volume volume
+    play music "music/elevator.mp3" fadein fadein volume volume loop
 
     scene elevator inside
     with dissolve
@@ -63,8 +63,8 @@ label third_day:
 
     scene office
     with fade
-    play music "music/music good.mp3" fadein fadein volume volume
-    play sound "music/keyboard.mp3" fadein fadein volume volume
+    play music "music/music good.mp3" fadein fadein volume volume loop
+    play sound "music/keyboard.mp3" fadein fadein volume volume loop
 
     show karen
     with OffsetRightToCenterSide
@@ -86,8 +86,8 @@ label third_day:
             jump third_day_say_false
             return
 
-label third_day_say_true:
-    play music "music/music good.mp3" fadein fadein volume volume
+label third_day_say_true: 
+    play music "music/music good.mp3" fadein fadein volume volume loop
     scene office
 
     show karen angry
@@ -135,7 +135,7 @@ label third_day_say_true:
     и дают небольшой срок на создание. Сегодня как раз поступил заказ на ремейк одной старой игры, 
     в которой нужно птицами стрелять по свиньям."
 
-    "Птицами по свиньям? Стрелять? Это очередная глупая шутка?"
+    "Птицами по свиньям? Стрелять? Ты о чем?"
 
     show kai serious
     kai "Никакая не шутка, я говорю совершенно серьезно."    
@@ -331,7 +331,7 @@ label third_day_say_true:
 
 
 label third_day_say_false:
-    play music "music/music good.mp3" fadein fadein volume volume
+    play music "music/music good.mp3" fadein fadein volume volume loop
     scene office
 
     show karen angry
@@ -400,7 +400,7 @@ label first_option_empty_office:
     "Что это? Какой-то шифр? Как они вообще работают с зашифрованными файлами? 
     Что это за кабинет то такой…"
 
-    play sound "music/shoes.mp3" volume volume
+    play sound "music/shoes.mp3" volume volume loop
     scene secret office empty screen_on
     with dissolve
 
@@ -526,45 +526,34 @@ label third_option_no_action:
 
     "Ну ладно… Раз все тут такие…"
 
-    scene project office board
-    with dissolve
+    girl "Ну, все наконец тут. Начнем. \nВсе, что нужно, чтобы справиться с сегодняшним проектом, я сейчас вам расскажу. \nСтарайтесь запомнить хоть что-то, и успешное выполнение вам практически гарантировано. В процессе создания любой игры разработчик использует константы.\nЭто значения, которые устанавливаются во время компиляции программы и не меняются."
 
-    show text "Ну, все наконец тут. Начнем. \nВсе, что нужно, чтобы справиться с сегодняшним проектом, я сейчас вам расскажу. \nСтарайтесь запомнить хоть что-то, и успешное выполнение вам практически гарантировано. В процессе создания любой игры разработчик использует константы.\nЭто значения, которые устанавливаются во время компиляции программы и не меняются. " at truecenter
+    window hide
+    show desc_1
     with dissolve
     pause 40.0
 
-    show text text_desk_first at truecenter:
-        zoom 0.93
+    show desc_2
     with dissolve
     pause 40.0
 
-    show text text_desk_second at truecenter
+    show desc_3
     with dissolve
     pause 40.0
 
-    show text text_desk_third at truecenter:
-        zoom 0.85
+    show desc_4
     with dissolve
     pause 40.0
 
-    show text text_desk_forth at truecenter:
-        zoom 0.94
+    show desc_5
     with dissolve
     pause 40.0
 
-    show text text_desk_fifth at truecenter:
-        zoom 0.84
+    show desc_6
     with dissolve
     pause 40.0
 
-    show text text_desk_sixth at truecenter:
-        zoom 0.82
-    with dissolve
-    pause 40.0
-
-    show text "Теперь приступайте к работе. Удачи." at truecenter
-    with dissolve
-    pause 4.0
+    girl "Теперь приступайте к работе. Удачи."
     
     scene elevator outside
     with fade

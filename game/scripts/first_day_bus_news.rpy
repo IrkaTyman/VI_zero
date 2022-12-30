@@ -4,7 +4,7 @@ label first_day_bus_news:
         zoom 2.0
     with dissolve   
 
-    play sound "music/autobus.mp3" fadein fadein volume volume
+    play sound "music/autobus.mp3" fadein fadein volume volume loop
 
 
     """{cps=43}Прошло уже несколько дней, а я все никак не осознаю произошедшее.
@@ -85,7 +85,7 @@ label end_bus:
 
     "{cps=43}Еле успел выскочить… Ну, вперед, в счастливое будущее!{/cps}"
 
-    jump first_day_moring
+    jump first_day_morning
     return
 
 
